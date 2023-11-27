@@ -6,6 +6,20 @@ https://templatemo.com/tm-559-zay-shop
 
 */
 
+$('.thumbnail').click(function(){
+	$('.modal-body').empty();
+	$($(this).parents('div').html()).appendTo('.modal-body');
+	$('#modal').modal({show:true});
+});
+
+$('#modal').on('show.bs.modal', function () {
+   $('.col-6,.row .thumbnail').addClass('blur');
+})
+
+$('#modal').on('hide.bs.modal', function () {
+   $('.col-6,.row .thumbnail').removeClass('blur');
+})
+
 'use strict';
 $(document).ready(function() {
 
@@ -24,11 +38,12 @@ $(document).ready(function() {
     // End accordion
 
     // Product detail
-    $('.product-links-wap a').click(function(){
+    $('.product-wap a').click(function(){
       var this_src = $(this).children('img').attr('src');
-      $('#product-detail').attr('src',this_src);
-      return false;
+      $('.galerija').attr('src',this_src);
     });
+    return false;
+
     $('#btn-minus').click(function(){
       var val = $("#var-value").html();
       val = (val=='1')?val:val-1;
