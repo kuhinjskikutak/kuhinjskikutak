@@ -29,6 +29,12 @@ Custom Css
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
+    .close{
+        
+    display: block;
+    width: 1.5em;
+    height: 2em;
+    }
 }
 .galerija-modal{
 }
