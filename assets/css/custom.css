@@ -33,6 +33,10 @@ Custom Css
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
+
+    .galerija-modal-div>img:hover{
+        transform: scale(2.5);
+    }
     .close-button{
         font-size: 2.5em;
         margin-right: 1em;
