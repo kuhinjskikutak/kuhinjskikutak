@@ -26,27 +26,156 @@ Custom Css
     height: auto;
     padding-left: 5%;
     padding-top: 1em;
+    border: 1px solid green;
+    display: none;
     }
-    .galerija-modal-div>img{
+    galerija-modal-div
+    .galerija-modal-div > img{
         display: inline-flex;
-        width: 45%;
+        width: 25%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-    }
-
-    .galerija-modal-div>img:hover{
-        transform: scale(2.5);
+        border: 1px solid red;
     }
     .close-button{
         font-size: 2.5em;
         margin-right: 1em;
     }
+
+    .mimg .mimgin{
+    width: 80%;
+    height: 70%;
+    margin:auto;
+    margin-top: 15%;
+    border: 2px solid gray;
+    right: 0;
+    }
+
+
     .close{
         
     display: block;
     width: 1.5em;
     height: 2em;
     }
+    .modal-content-image {
+        margin-left: 25%;
+        display: block;
+        width: 25%;
+        max-width: 12em;
+      }
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev{
+    cursor: pointer;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    padding-top: 45%;
+    margin-left: -2em;
+    color: green;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    padding-top: 45%;
+    margin-right: -2em;
+    color: green;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+.prev i{
+    font-size: 3em!important;
+    color: #59ab6e;
+    margin-left: 1em;
+}
+
+.next i{
+    font-size: 3em!important;
+    color: #59ab6e;
+    margin-right: 1em;
+}
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
 }
 .galerija-modal{
 }

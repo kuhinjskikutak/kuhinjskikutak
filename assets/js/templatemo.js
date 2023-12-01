@@ -21,6 +21,9 @@ $('#modal').on('hide.bs.modal', function () {
 })
 
 'use strict';
+
+
+
 $(document).ready(function() {
 
     // Accordion
