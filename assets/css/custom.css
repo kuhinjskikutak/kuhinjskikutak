@@ -5,16 +5,31 @@ Custom Css
 .glavni-menu{
   display:block;
   border: 3px solid green;
-  width: 40%;
+  width: 100%;
 }
 .galerija-modal-div{
     display: block;
-    width: 60%;
+    width: 100%;
     height: 50em;
     padding-left: 5%;
     padding-top: 1em;
     overflow-y: scroll;
     margin: ;
+}
+.slika-slogan{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding: auto;
+}
+.kontent{
+  width: 90%;
+}
+.kontent2{
+  width: 50%;
+}
+.kontent2>ul{
+  width: 60%;
 }
 .artikli{
   margin-left: auto;
@@ -41,8 +56,12 @@ Custom Css
 .modal-content-image {
   margin-left: 25%;
   display: block;
-  width: 25%;
+  width: 100%;
   max-width: 12em;
+}
+.modal-content{
+  border: 1px solid red;  /* sa !important radi ali ga ogranicava modal (valjda) */
+  width: 100%;
 }
 .mySlides{
   display: none;
@@ -50,6 +69,9 @@ Custom Css
 
 .next i{
   display: none;
+}
+.modal-pop{
+  width: 100%;
 }
 }
 
@@ -64,10 +86,10 @@ Custom Css
     display: none;
     }
     .kontent{
-      width: 100%;
+      width: 90%;
     }
     .slika-slogan{
-      display: none;
+      display: none!important;
     }
     .galerija-modal-div > img{
         display: inline-flex;
@@ -89,7 +111,6 @@ Custom Css
     border: 2px solid gray;
     right: 0;
     }
-
 
     .close{
         
