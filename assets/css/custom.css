@@ -162,13 +162,19 @@ Custom Css
     width: 20%;
     height: 100%;
     padding-top: 45%;
-    margin-left: -em;
-    color: green;
+    margin-left: -1em;
+    color: white;
     font-weight: bold;
     font-size: 3em;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+  }
+  .fa-chevron-right{
+    text-shadow: 0px 1px 1px black, 0px 1px 3px black, 1px 1px 1px black ;
+  }
+  .fa-chevron-left{
+    text-shadow: 0px 1px 1px black, 0px 1px 3px black, 1px 1px 1px black ;
   }
   .next {
     cursor: pointer;
@@ -176,7 +182,7 @@ Custom Css
     width: 20%;
     height: 100%;
     padding-top: 45%;
-    margin-right: -em;
+    margin-right: -2em;
     color: green;
     font-weight: bold;
     font-size: 3em;
@@ -186,22 +192,21 @@ Custom Css
   }
 .prev i{
     font-size: 3em!important;
-    color: #59ab6e;
+    color: white;
     margin-left: 1em;
     
 }
 
 .next i{
     font-size: 3em!important;
-    color: #59ab6e;
-    margin-right: em;
+    color: white;
+    margin-right: 1em;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-  
-  
+
   /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
