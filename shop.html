@@ -29,7 +29,6 @@ https://templatemo.com/tm-559-zay-shop
 
 <style>
 
-
 .kako-poruciti{
 border: 2px solid gray; 
 margin: 5%;
@@ -112,11 +111,11 @@ border-left:2px solid #59ab6e;
 
 
 
-
+<div class="container py-5">
     <!-- Start Content -->
-    <div class="row col-lg-12 kontent">
+    <div class="row col-lg-12 ">
 
-        <div  style="margin-left:0.5em; margin-top: 2em ;" style="margin: 2em;" class="row container col-lg-3 kontent2 ">
+        <div  style="margin-left:0.5em; margin-top: 2em ;" style="margin: 2em;" class="row container col-lg-3">
             
 
             <ul style="margin: -2;" class="list-unstyled templatemo-accordion">
@@ -210,7 +209,7 @@ border-left:2px solid #59ab6e;
     </div>
 
 
-<div class="row artikli">
+<div class="artikli row">
 
 
     
@@ -243,11 +242,11 @@ border-left:2px solid #59ab6e;
                             
 
   <!-- Pop-up window -->
-  <div class="modal" id="myModal001"> <!-- ID za pop up model, ici po id itema po tabeli -->
+  <div class="modal fade" id="myModal001"> <!-- ID za pop up model, ici po id itema po tabeli -->
     <div class="modal-dialog custom-modal-dialog">
         <div style="background-color: #f8f8f8;" class="modal-content">
-            
 
+            <div class="row">    
         <div class="galerija-modal-div">
            <img src="/assets/img/posude/posuda1a.jpeg" alt="">
            <img src="/assets/img/posude/posuda1b.jpg"  alt="">
@@ -303,7 +302,7 @@ Molimo vas da ne koristite u vrućoj vodi i u mašini za pranje posuđa.
                     Takođe, imate mogućnost slanja narudžbe putem e-maila (<u>kutakkuhinjski@gmail.com </u>), kontaktiranja putem Facebooka ili Instagrama, ili putem WhatsApp-a s navedenom šifrom proizvoda, 
                     količinom i potrebnim informacijama. </p>
             </div>
-
+            </div>
       </div>
     </div>
   </div>
@@ -1767,8 +1766,8 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
 
                 </div>
 
-          
-            </div>   
+            </div>
+            </disv>   
     <!-- End Content -->
 </div>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
@@ -1866,6 +1865,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
     <script src="assets/js/custom.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        
         $(document).ready(function() {
           // Show all items initially
           $(".item").show();
@@ -1883,7 +1883,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
             }
           });
         });
-
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
 
         $('[id^=carousel-selector-]').click( function(){
             var id_selector = $(this).attr("id");
@@ -1891,6 +1891,8 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
             var id = parseInt(id);
             $('#myCarousel').carousel(id);
     });
+
+    
         </script>
     <!-- End Script -->
 </body>
