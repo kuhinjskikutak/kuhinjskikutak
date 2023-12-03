@@ -122,7 +122,9 @@ Custom Css
         font-size: 2.5em;
         margin-right: 1em;
     }
-
+.product-wap > .card-body{
+  font-size: 1.5em!important;
+}
     .mimg .mimgin{
     width: 80%;
     height: 70%;
