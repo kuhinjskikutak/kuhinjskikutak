@@ -164,13 +164,13 @@ Custom Css
     width: 20%;
     height: 100%;
     padding-top: 45%;
-    margin-left: -1em;
     color: white;
     font-weight: bold;
     font-size: 3em;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    border: 1px solid red;
   }
   .fa-chevron-right{
     text-shadow: 0px 1px 1px black, 0px 1px 3px black, 1px 1px 1px black ;
@@ -184,13 +184,13 @@ Custom Css
     width: 20%;
     height: 100%;
     padding-top: 45%;
-    margin-right: -2em;
     color: green;
     font-weight: bold;
     font-size: 3em;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    border: 1px solid red;
   }
 .prev i{
     font-size: 3em!important;
@@ -202,7 +202,7 @@ Custom Css
 .next i{
     font-size: 3em!important;
     color: white;
-    margin-right: 1em;
+    margin-left: 0.5em;
 }
 .next {
   right: 0;
