@@ -122,43 +122,28 @@ border-left:2px solid #59ab6e;
                         <a class="text-decoration-none filter-link" data-filter="all">Svi Artikli</a>
                     </li>
                     <li class="pb-3">
-                        <a id="cesmeid" class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="cesma">
+                        <a id="cesmeid" class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="slavina">
                             Slavina
                             <i class="fa fa-fw fa-chevron-circle-right mt-1"></i>
                         </a>
                     </li>
                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" href="#">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="posuda">
                             Posude
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none filter-link" data-filter="posudametal">Metalne</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="posudastaklo">Staklene</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="posudaplastika">Plastične</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="posudadrvo">Drvene</a></li>
-                        </ul>
                     </li>
                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" href="#">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="traka">
                             Trake
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none filter-link" data-filter="trakaprovidna">Providne</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="trakaneprovidna">Neprovidne i u boji</a></li>
-                        </ul>
                     </li>
                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" href="#">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="pribor">
                             Pribor
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none filter-link" data-filter="priborplastika">Plastičan</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="pribormetal">Metalni</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="pribordrvo">Drveni</a></li>
-                        </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="svetlo">
@@ -173,14 +158,10 @@ border-left:2px solid #59ab6e;
                         </a>
                     </li>
                     <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" href="#">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="podmetac">
                             Podmetači
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none filter-link" data-filter="podmetacveliki">Veliki</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="podmetacmali">Mali</a></li>
-                        </ul>
                     </li>
                     <li class="pb-3">
                         <a class="collapsed d-flex justify-content-between h3 text-decoration-none filter-link" data-filter="tortekolaci">
@@ -211,7 +192,7 @@ border-left:2px solid #59ab6e;
 <div class="artikli row">
     
 <!---  Kartica artikla posude plastika posude--->
-<div class="col-md-4 item posudaplastika"> 
+<div class="col-md-4 item posuda"> 
     <div class="card mb-4 product-wap rounded-0">
 
         <div data-toggle="modal" data-target="#myModal001" class="card rounded-0 slideshow-container">
@@ -670,7 +651,7 @@ Boja: Bela, Siva, Crna
                 </div>
 
 <!---  Kartica artikla drzac nozeva--->
-<div class="col-md-4 item drzac razno pribormetal"> <!-- ID za pretragu -->
+<div class="col-md-4 item drzac razno pribor"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
 
        
@@ -787,7 +768,7 @@ Boja: Bela, Siva, Crna
                 </div>
 
 <!---  Kartica artikla drzac nozeva--->
-<div class="col-md-4 item drzac razno posudaplastika"> <!-- ID za pretragu -->
+<div class="col-md-4 item drzac razno posuda"> <!-- ID za pretragu -->
                     <div class="card mb-4 product-wap rounded-0">
                 
                            
@@ -917,7 +898,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
 
 
 <!---  Kartica artikla slavina dodatak--->
-<div class="col-md-4 item cesma razno"> <!-- ID za pretragu -->
+<div class="col-md-4 item slavina razno"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
                   
         <div data-toggle="modal" data-target="#myModal025" class="card rounded-0 slideshow-container">
@@ -1040,7 +1021,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
                 </div>
 
 <!---  Kartica artikla slavina dodatak--->
-<div class="col-md-4 item razno pribormetal tortekolaci"> <!-- ID za pretragu -->
+<div class="col-md-4 item razno pribor tortekolaci"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
             
         <div data-toggle="modal" data-target="#myModal042" class="card rounded-0 slideshow-container">
@@ -1154,7 +1135,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
                 </div>
 
 <!---  Kartica artikla drzac 360--->
-<div class="col-md-4 item razno pribormetal pribordrvo priborplastika drzac"> <!-- ID za pretragu -->
+<div class="col-md-4 item razno pribor drzac"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
 
             
@@ -1516,7 +1497,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
                 </div>
 
 <!---  Kartica artikla svetlo--->
-<div class="col-md-4 item razno"> <!-- ID za pretragu -->
+<div class="col-md-4 item svetlo"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
 
         
@@ -1645,7 +1626,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
                 </div>
 
 <!---  Kartica artikla svetlo--->
-<div class="col-md-4 item razno"> <!-- ID za pretragu -->
+<div class="col-md-4 item slavina razno"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
 
         
@@ -1753,7 +1734,7 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
                 </div>
 
 <!---  Kartica artikla svetlo--->
-<div class="col-md-4 item razno slavina"> <!-- ID za pretragu -->
+<div class="col-md-4 item slavina"> <!-- ID za pretragu -->
     <div class="card mb-4 product-wap rounded-0">
 
         
@@ -1865,8 +1846,376 @@ Paket uključuje: 1 Držač za odlaganje kuhinjskih alata
 <!-- Kraj kartice artikla -->
                 </div>
 
+<!---  Kartica artikla svetlo--->
+<div class="col-md-4 item razno posuda"> <!-- ID za pretragu -->
+                    <div class="card mb-4 product-wap rounded-0">
+                
+                        
+                        
+                        <div data-toggle="modal" data-target="#myModal017" class="card rounded-0 slideshow-container">
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3a.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3b.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3c.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3d.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3e.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3f.jpeg" style="width:100%">
+                            </div>
+                            <div class="mySlides15">
+                                <img src="/assets/img/posude/posuda3g.jpeg" style="width:100%">
+                            </div>
+                    </div>
+                
+                
+                
+                        <a class="prev" onclick="plusSlides(-1, 14)"><i class="fa-solid fa-chevron-left"></i></a>
+                        <a class="next" onclick="plusSlides(1, 14)"><i class="fa-solid fa-chevron-right"></i></a> 
+                
+                  
+                        
+                <!-- Pop-up window -->
+                <div class="modal" id="myModal017"> <!-- ID za pop up model, ici po id itema po tabeli -->
+                <div class="modal-dialog custom-modal-dialog">
+                <div style="background-color: #f8f8f8;" class="modal-content">
+                
+                
+                <div class="row">
+                <div class="galerija-modal-div">
+                
+                
+                    <img src="/assets/img/posude/posuda3a.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3b.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3c.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3d.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3e.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3f.jpeg" alt="">
+                    <img src="/assets/img/posude/posuda3g.jpeg" alt="">
+                
+                    
+                  
+                </div>
+                
+                
+                <!-- col end -->
+                <div class="col-lg-7 mt-5" >
+                    <p type="button" class="close" data-dismiss="modal"><strong class="close-button">X</strong></p> <!-- Close button -->
+                <div class="card" style="margin-right: 1em">
+                <div class="card-body" style="margin-right: 2%;">
+                    <h1 class="h2"><strong>Razdvojena kutija za ručak</strong></h1>
+                    <p class="h3 py-2">1349din</p>
+                
+                <hr>
+                
+                    <h6>Opis:</h6>
+                    <p>Razdvojena kutija za ručak, pogodna za mikrotalasnu pećnicu<br>
+                         <br>
+                        <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <h6></h6>
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-muted"><strong></strong></p>
+                        </li>
+                    </ul>
+                
+                    <h6>Specifikacije:</h6>
+                    <ul class="list-unstyled pb-3"> 
+                        Lagan, jednostavan za nošenje, pogodan za piknik. <br>
+Može se zagrevati u mikrotalasnoj pećnici (nema rupa u kutiji, treba je otvoriti prilikom stavljanja u mikrotalasnu).<br><br>
+Napomena:<br>
+Osnovna sirovina ovog proizvoda je pšenična slama. Nakon što primite proizvod,
+ imaćete miris pšenične slame. To je bezopasan gas. Nakon ponovljenog čišćenja i upotrebe, miris će nestati.<br><br>
+<u>Ova kutija za ručak nije potpuno nepropusna i nije pogodna za jela sa supom.</u><br><br>
+Specifikacije:<br>
+Boja: Roze/Plava/Bež/Zelena<br>
+Materijal: Pšenična slama+ PP (BPA Free)<br>
+Težina (približno): 0.11kg<br>
+Veličina (približno): 23.5 x 15 x 5 cm<br>
+                    </ul>
+                <hr>
+                    <form action="" method="GET">
+                        <input type="hidden" name="product-title" value="Activewear">
+                        <div class="row pb-3">
+                            
+                    <p class="h3 py-2">Šifra Artikla: 017</p>
+                        </div>
+                    </form>
+                
+                </div>
+                </div>
+                <p class="kako-poruciti">Svaki proizvod možete naručiti slanjem šifre proizvoda koju možete pronaći na kartici proizvoda ili na dnu detaljnog opisa. 
+                    Takođe, imate mogućnost slanja narudžbe putem e-maila (<u>kutakkuhinjski@gmail.com </u>), kontaktiranja putem Facebooka ili Instagrama, ili putem WhatsApp-a s navedenom šifrom proizvoda, 
+                    količinom i potrebnim informacijama. </p>
+                </div>
+                </div>
+                
+                </div>  
+                </div>
+                </div>
+                
+                         <div class="card-body">
+                                                <a class="h3 text-decoration-none">Razdvojena kutija za ručak</a>
+                                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                    <li>Tip: Roze,Plava,Bež,Zelena</li>
+                                                </ul> <br>
+                                                <hr>
+                                                <p class="text-center mb-0"><strong>1349din</strong><br>šifra: 017</p>
+                         </div>
+                    </div>
+                
+                <!-- Kraj kartice artikla -->
+                </div>
+
+<!---  Kartica artikla svetlo--->
+<div class="col-md-4 item podmetac"> <!-- ID za pretragu -->
+                                    <div class="card mb-4 product-wap rounded-0">
+                                
+                                        
+                                        
+                                        <div data-toggle="modal" data-target="#myModal024" class="card rounded-0 slideshow-container">
+                                            <div class="mySlides16">
+                                                <img src="/assets/img/podloga/podloga1a.jpeg" style="width:100%">
+                                            </div>
+                                            <div class="mySlides16">
+                                                <img src="/assets/img/podloga/podloga1b.jpeg" style="width:100%">
+                                            </div>
+                                            <div class="mySlides16">
+                                                <img src="/assets/img/podloga/podloga1c.jpeg" style="width:100%">
+                                            </div>
+                                    </div>
+                                
+                                
+                                
+                                        <a class="prev" onclick="plusSlides(-1, 15)"><i class="fa-solid fa-chevron-left"></i></a>
+                                        <a class="next" onclick="plusSlides(1, 15)"><i class="fa-solid fa-chevron-right"></i></a> 
+                                
+                                  
+                                        
+                                <!-- Pop-up window -->
+                                <div class="modal" id="myModal024"> <!-- ID za pop up model, ici po id itema po tabeli -->
+                                <div class="modal-dialog custom-modal-dialog">
+                                <div style="background-color: #f8f8f8;" class="modal-content">
+                                
+                                
+                                <div class="row">
+                                <div class="galerija-modal-div">
+                                
+                                
+                                    <img src="/assets/img/podloga/podloga1a.jpeg" alt="">
+                                    <img src="/assets/img/podloga/podloga1b.jpeg" alt="">
+                                    <img src="/assets/img/podloga/podloga1c.jpeg" alt="">
+                                
+                                    
+                                  
+                                </div>
+                                
+                                
+                                <!-- col end -->
+                                <div class="col-lg-7 mt-5" >
+                                    <p type="button" class="close" data-dismiss="modal"><strong class="close-button">X</strong></p> <!-- Close button -->
+                                <div class="card" style="margin-right: 1em">
+                                <div class="card-body" style="margin-right: 2%;">
+                                    <h1 class="h2"><strong>Podloga za pečenje</strong></h1>
+                                    <p class="h3 py-2">1500din</p>
+                                
+                                <hr>
+                                
+                                    <h6>Opis:</h6>
+                                    <p>&nbsp;<br>
+                                         <br>
+                                        <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <h6></h6>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <p class="text-muted"><strong></strong></p>
+                                        </li>
+                                    </ul>
+                                
+                                    <h6>Specifikacije:</h6>
+                                    <ul class="list-unstyled pb-3"> 
+                                        Sigurna za upotrebu u mikrotalasnoj pećnici i periva u mašini za pranje sudova <br>
+Savija se radi jednostavnog skladištenja<br>
+Višestruke namene - može takođe biti podloga za vruće tiganje ili držač za lonce!<br>
+Može se iseći na bilo koju veličinu!<br>
+Veoma jednostavna za čišćenje!<br>
+Može se zagrejati do 428°F (220°C).<br>
+Veličina: 40*27cm<br>
+                                    </ul>
+                                <hr>
+                                    <form action="" method="GET">
+                                        <input type="hidden" name="product-title" value="Activewear">
+                                        <div class="row pb-3">
+                                            
+                                    <p class="h3 py-2">Šifra Artikla: 024</p>
+                                        </div>
+                                    </form>
+                                
+                                </div>
+                                </div>
+                                <p class="kako-poruciti">Svaki proizvod možete naručiti slanjem šifre proizvoda koju možete pronaći na kartici proizvoda ili na dnu detaljnog opisa. 
+                                    Takođe, imate mogućnost slanja narudžbe putem e-maila (<u>kutakkuhinjski@gmail.com </u>), kontaktiranja putem Facebooka ili Instagrama, ili putem WhatsApp-a s navedenom šifrom proizvoda, 
+                                    količinom i potrebnim informacijama. </p>
+                                </div>
+                                </div>
+                                
+                                </div>  
+                                </div>
+                                </div>
+                                
+                                         <div class="card-body">
+                                                                <a class="h3 text-decoration-none">Podloga za pečenje</a>
+                                                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                                    <li>&nbsp;</li>
+                                                                </ul> <br>
+                                                                <hr>
+                                                                <p class="text-center mb-0"><strong>1500din</strong><br>šifra: 024</p>
+                                         </div>
+                                    </div>
+                                
+                                <!-- Kraj kartice artikla -->
+                </div>
+
+<!---  Kartica artikla svetlo--->
+<div class="col-md-4 item razno"> <!-- ID za pretragu -->
+    <div class="card mb-4 product-wap rounded-0">
+
+        
+        
+        <div data-toggle="modal" data-target="#myModal034" class="card rounded-0 slideshow-container">
+            <div class="mySlides17">
+                <img src="/assets/img/razno/razno4a.jpeg" style="width:100%">
             </div>
-            </disv>   
+            <div class="mySlides17">
+                <img src="/assets/img/razno/razno4b.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides17">
+                <img src="/assets/img/razno/razno4c.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides17">
+                <img src="/assets/img/razno/razno4d.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides17">
+                <img src="/assets/img/razno/razno4e.jpeg" style="width:100%">
+            </div>
+    </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1, 16)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1, 16)"><i class="fa-solid fa-chevron-right"></i></a> 
+
+  
+        
+<!-- Pop-up window -->
+<div class="modal" id="myModal034"> <!-- ID za pop up model, ici po id itema po tabeli -->
+<div class="modal-dialog custom-modal-dialog">
+<div style="background-color: #f8f8f8;" class="modal-content">
+
+
+<div class="row">
+<div class="galerija-modal-div">
+
+
+    <img src="/assets/img/razno/razno4a.jpeg" alt="">
+    <img src="/assets/img/razno/razno4b.jpeg" alt="">
+    <img src="/assets/img/razno/razno4c.jpeg" alt="">
+    <img src="/assets/img/razno/razno4d.jpeg" alt="">
+    <img src="/assets/img/razno/razno4e.jpeg" alt="">
+
+    
+  
+</div>
+
+
+<!-- col end -->
+<div class="col-lg-7 mt-5" >
+    <p type="button" class="close" data-dismiss="modal"><strong class="close-button">X</strong></p> <!-- Close button -->
+<div class="card" style="margin-right: 1em">
+<div class="card-body" style="margin-right: 2%;">
+    <h1 class="h2"><strong>UV zavesa za prozor</strong></h1>
+    <p class="h3 py-2">1500din</p>
+
+<hr>
+
+    <h6>Opis:</h6>
+    <p>
+        Sa vakuumskom čašom - Dekorativni blok UV zavesa za prozor, roletne za zamračivanje.<br>
+         <br>
+        <ul class="list-inline">
+        <li class="list-inline-item">
+            <h6></h6>
+        </li>
+        <li class="list-inline-item">
+            <p class="text-muted"><strong></strong></p>
+        </li>
+    </ul>
+
+    <h6>Specifikacije:</h6>
+    <ul class="list-unstyled pb-3"> 
+        U paketu: 1 komad zavese <br>
+ZAŠTITA: Može blokirati štetne UV zrake i smanjiti toplotu i buku iz okoline.<br>
+Materijal: PVC<br>
+Veličina: <br>40x125cm - 1299din <br>40x60cm -  1199din <br>45x125cm - 1499din <br>50x125cm - 1599din <br>58x125cm - 1599din <br>
+Boja: Crna, Srebrna<br>
+Karakteristike: Izrađena od PVC tkanine, čvrsta i dugotrajna. Srebrni premaz je protiv sunca i smanjuje toplotu.<br>
+    </ul>
+<hr>
+    <form action="" method="GET">
+        <input type="hidden" name="product-title" value="Activewear">
+        <div class="row pb-3">
+            
+    <p class="h3 py-2">Šifra Artikla: 034</p>
+        </div>
+    </form>
+
+</div>
+</div>
+<p class="kako-poruciti">Svaki proizvod možete naručiti slanjem šifre proizvoda koju možete pronaći na kartici proizvoda ili na dnu detaljnog opisa. 
+    Takođe, imate mogućnost slanja narudžbe putem e-maila (<u>kutakkuhinjski@gmail.com </u>), kontaktiranja putem Facebooka ili Instagrama, ili putem WhatsApp-a s navedenom šifrom proizvoda, 
+    količinom i potrebnim informacijama. </p>
+</div>
+</div>
+
+</div>  
+</div>
+</div>
+
+         <div class="card-body">
+                                <a class="h3 text-decoration-none">UV zavesa za prozor</a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    <li>&nbsp;</li>
+                                </ul> <br>
+                                <hr>
+                                <p class="text-center mb-0"><strong>1299din - 1599din</strong><br>šifra: 034</p>
+         </div>
+    </div>
+
+<!-- Kraj kartice artikla -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            </div>   
     <!-- End Content -->
 </div>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
