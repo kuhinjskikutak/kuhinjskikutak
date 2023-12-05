@@ -21,7 +21,55 @@ Custom Css
   display: table;
   clear: both;
 }
+ /* Next & previous buttons */
+ .prev{
+  cursor: pointer;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  padding-top: 45%;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.fa-chevron-right{
+  text-shadow: 0px 1px 1px black, 0px 1px 3px black, 1px 1px 1px black ;
+}
+.fa-chevron-left{
+  text-shadow: 0px 1px 1px black, 0px 1px 3px black, 1px 1px 1px black ;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  padding-top: 45%;
+  color: green;
+  font-weight: bold;
+  font-size: 3em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev i{
+  font-size: 3em!important;
+  color: white;
+  margin-left: 1em;
+  
+}
 
+.next i{
+  font-size: 3em!important;
+  color: white;
+  margin-left: 0.5em;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
 /* Six columns side by side */
 .column {
   float: left;
@@ -72,23 +120,13 @@ Custom Css
 .close-button{
     font-size: 1.5em;
     margin-right: 0.3em;
-}
-.prev i{
-  display: none;
-    
+} 
 }
 .modal-content-image {
   margin-left: 25%;
   display: block;
   width: 100%;
   max-width: 12em;
-}
-.mySlides{
-  display: none;
-}
-
-.next i{
-  display: none;
 }
 .modal-pop{
   width: 100%;
