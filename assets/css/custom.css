@@ -27,7 +27,7 @@ Custom Css
   position: absolute;
   width: 20%;
   height: 100%;
-  padding-top: 45%;
+  padding-top: 80%;
   color: white;
   font-weight: bold;
   font-size: 3em;
@@ -46,7 +46,7 @@ Custom Css
   position: absolute;
   width: 20%;
   height: 100%;
-  padding-top: 45%;
+  padding-top: 80%;
   color: green;
   font-weight: bold;
   font-size: 3em;
@@ -57,7 +57,7 @@ Custom Css
 .prev i{
   font-size: 3em!important;
   color: white;
-  margin-left: 1em;
+  margin-left: 0.5em;
   
 }
 
