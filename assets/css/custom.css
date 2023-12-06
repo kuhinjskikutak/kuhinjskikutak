@@ -94,6 +94,12 @@ border-radius: 3px 0 0 3px;
   margin: auto;
   padding: auto;
 } 
+.slika-slogan1{
+  display: flex;
+  width: 25%;
+  margin: auto;
+  padding: auto;
+} 
 .kontent{
   width: 90%;
 }
