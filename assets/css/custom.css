@@ -60,7 +60,6 @@ Custom Css
   margin-left: 0.5em;
   
 }
-
 .next i{
   font-size: 3em!important;
   color: white;
@@ -127,7 +126,6 @@ border-radius: 3px 0 0 3px;
     font-size: 1.5em;
     margin-right: 0.3em;
 } 
-}
 .modal-content-image {
   margin-left: 25%;
   display: block;
@@ -137,9 +135,30 @@ border-radius: 3px 0 0 3px;
 .modal-pop{
   width: 100%;
 }
+.formaime{
+  width: 31em;
+}
+.formakontakt{
+  width: 31em;
+}
+.formatext{
+  width: 38em;
+}
 }
 
 @media (max-width:730px) {
+
+
+  .formaime{
+    width: 18em!important;
+  }
+  .formakontakt{
+    width: 18em!important;
+  }
+  .formatext{
+    width: 18em!important;
+  }
+
     .galerija-modal-div{
         flex-flow: column;
     width: 80%;
@@ -168,6 +187,9 @@ border-radius: 3px 0 0 3px;
     }
 .product-wap > .card-body{
   font-size: 1.5em!important;
+}
+.slika-slogan1{
+  display: none!important;
 }
     .mimg .mimgin{
     width: 80%;
