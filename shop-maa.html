@@ -44,8 +44,8 @@ padding: 1em;
 .svi-artikli-lista a:hover{ 
     color: white;
     background-color: #212529;
-    padding: 0.5em;
     border-radius: 5px;
+    margin: 5em;
 }
 .templatemo-accordio{
     cursor: pointer;
@@ -57,9 +57,6 @@ padding: 1em;
       margin-top: 1rem;
       margin-right: 1rem;
     }
-.pb-3 h4{
-    background-color: red;
-}  
 .templatemo-accordio .pb-3{
     display: table-cell;
     text-align: center;
@@ -67,15 +64,30 @@ padding: 1em;
 .templatemo-accordio .pb-3 .pl-3{
     text-align: left;
     list-style-type:none;
+    margin: 2em;
+}
+.svi-artikli-lista{
+    margin-bottom: 2em;
+}
+.granica{
+    border-left: 1px solid #183D3D;
+    border-right: 1px solid #183D3D;
+}
+.granica-levo{
+    border-left: 1px solid #183D3D;
+}
+.granica-desno{
     border-right: 1px solid #183D3D;
 }
 .templatemo-accordio .pb-3 .pl-3 li{
-    margin: 0.3em;
-    padding: 0.1em;
+    padding: 0.2em;
     min-height:1em;
-    min-width:10em;
-    padding-left: 1em;
     border-radius: 3px;
+    width: 60%!important;
+}
+.templatemo-accordio .pb-3 .pl-3 li a{
+    min-height:1em;
+    border-radius: 3px; 
 }
 .templatemo-accordio .pb-3 .pl-3 li:hover{
     border-left: 4px solid gray;
@@ -144,23 +156,23 @@ padding: 1em;
 
     
 
-<div style=" width: 100%;" class="container py-5 ">
+<div style=" width: 100%;" class=" py-5 ">
     <!-- Start Content -->
 
-        <div  style=" margin: auto;" style="margin: 2em;" class="">
+        <div style="margin: 1em;" style="margin: 2em;" class="">
             
             <li class="h2 svi-artikli-lista pb-3">
-                <a class="svi-artikli text-decoration-none filter-link" data-filter="all"><strong>Prikaži Sve</strong></a>
+                <a style="border-bottom: 1px solid gray;" class="svi-artikli text-decoration-none filter-link" data-filter="all"><strong>Prikaži Sve</strong></a>
             </li>
-            <ul style="margin-bottom: 4em;display: table; width: 100%;" class="list-unstyled templatemo-accordio">
+            <ul style=" padding-left: 1em;padding-right: 1em;;margin-bottom: 4em;display: table; width: 100%;" class="list-unstyled templatemo-accordio">
                     
 
-                    <li style="margin: auto;" class="pb-3">
-                        <p class="centered d-flex justify-content-between h4 text-decoration-none" data-filter="enterijer">
+                    <li style="margin: auto;" class="granica-levo pb-3">
+                        <p class="centered d-flex justify-content-between h3 text-decoration-none" data-filter="enterijer">
                             <center><strong style="color: #FAF6F0;">Unutrašnji dodaci za automobil:</strong></center>
                         </p>
                         <ul class="show pl-3">
-                            <li><a class="text-decoration-none filter-link" data-filter="cesmafiksna">Presvlake za sedišta</a></li>
+                            <li style="width: 90%;"><a class="text-decoration-none filter-link" data-filter="cesmafiksna">Presvlake za sedišta</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmazglobna">Podne prostirke</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmatus">Presvlake za volan</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmadodatak">Organizatori u automobilu</a></li>
@@ -171,7 +183,7 @@ padding: 1em;
                         </ul>
                     </li>
 
-                    <li style="margin: auto;" class="pb-3">
+                    <li style="margin: auto;" class="granica pb-3">
                         <p class="centered d-flex justify-content-between h3 text-decoration-none" data-filter="eksterijer">
                         <center><strong style="color: #FAF6F0;">Spoljni dodaci za automobil:</strong></center>
                     </p>
@@ -182,13 +194,13 @@ padding: 1em;
                             <li><a class="text-decoration-none filter-link" data-filter="cesmatus">Brisači vetrobrana</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmadodatak">Presvlake za retrovizore</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmafiksna">Brave i maske za prednji deo automobila</a></li>
-                            <li><a class="text-decoration-none filter-link" data-filter="cesmazglobna">Proizvodi za čišćenje i održavanje automobila</a></li>
+                            <li><a class="text-decoration-none filter-link" data-filter="cesmazglobna">Čišćenje i održavanje automobila</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmatus">Dodaci za točkove i gume</a></li>
                             <li><a class="text-decoration-none filter-link" data-filter="cesmadodatak">Setovi za stilizovanje karoserije</a></li>
                         </ul>
                     </li>
 
-                    <li style="margin: auto;" class="pb-3">
+                    <li style="margin: auto;" class="granica-desno pb-3">
                         <p class="d-flex justify-content-between h4 text-decoration-none filter-link" data-filter="dodacisve    ">
                         <center><strong style="color: #FAF6F0;">Korisnički i performansni dodaci:</strong></center>
                         </p>
@@ -210,7 +222,7 @@ padding: 1em;
         
 
 
-<div class="artikli row">
+<div class="artikli row container">
     
 <!---  Kartica artikla posude plastika posude--->
 <div class="col-md-4 item posuda"> 
