@@ -70,11 +70,43 @@ border-left:2px solid #59ab6e;
       margin-top: 1rem;
       margin-right: 1rem;
     }
+    #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 50em;
+  height: 50em;
+  position: absolute;
+  left: 30%;
+  /* centers the loading animation horizontally one the screen */
+  top: 15%;
+  /* centers the loading animation vertically one the screen */
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  /* is width and height divided by two */
+}
 </style>
 
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0">
+    <div id="preloader">
+        <div style="background-image:url(assets/loader.gif);" id="status">&nbsp;</div>
+      </div>
+      
+      
+      
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div id="vrh-stranice" class="container text-light">
@@ -4943,6 +4975,13 @@ U pakovanju:<br>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/pretraga.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+       $(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+})
+      </script>
     <script>
         
         $(document).ready(function() {
