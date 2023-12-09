@@ -2,6 +2,32 @@
 Custom Css
 */
 @media (min-width:730px) {
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 50em;
+    height: 50em;
+    position: absolute;
+    left: 30%;
+    /* centers the loading animation horizontally one the screen */
+    top: 15%;
+    /* centers the loading animation vertically one the screen */
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    /* is width and height divided by two */
+  }
 .glavni-menu{
   display:block;
   border: 3px solid green;
@@ -148,7 +174,32 @@ border-radius: 3px 0 0 3px;
 }
 
 @media (max-width:730px) {
-
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+  }
+  
+  #status {
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    left: 25%;
+    /* centers the loading animation horizontally one the screen */
+    top: 25%;
+    /* centers the loading animation vertically one the screen */
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    /* is width and height divided by two */
+  }
 
   .formaime{
     width: 18em!important;
