@@ -1,5 +1,5 @@
-const slideIndex = Array.from({ length: 100}, () => 1);
-const slideId = Array.from({ length: 100 }, (_, i) => `mySlides${i + 1}`);
+const slideIndex = Array.from({ length: 200}, () => 1);
+const slideId = Array.from({ length: 200 }, (_, i) => `mySlides${i + 1}`);
 
 for (let i = 0; i < slideId.length; i++) {
   showSlides(1, i);
