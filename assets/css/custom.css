@@ -13,7 +13,13 @@ Custom Css
     z-index: 99;
     /* makes sure it stays on top */
   }
-  
+.filter-link{
+  height: 1em;
+}
+.filter-link:hover{ 
+  border-left:3px solid #59ab6e;
+  }    
+
   #status {
     width: 50em;
     height: 50em;
