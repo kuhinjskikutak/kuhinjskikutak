@@ -187,12 +187,11 @@ border-radius: 3px 0 0 3px;
   }
   
   #status {
-    width: 20em;
-    height: 20em;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 25%;
     /* centers the loading animation horizontally one the screen */
-    top: 25%;
+    top: 5%;
     /* centers the loading animation vertically one the screen */
     /* path to your loading animation */
     background-repeat: no-repeat;
@@ -257,6 +256,7 @@ border-radius: 3px 0 0 3px;
     display: block;
     width: 1.5em;
     height: 2em;
+    margin-top: -0.5em;
     }
     .modal-content-image {
         margin-left: 25%;
