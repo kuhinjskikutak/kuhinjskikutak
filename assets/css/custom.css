@@ -13,10 +13,6 @@ Custom Css
     z-index: 99;
     /* makes sure it stays on top */
   }
-.text-light{
-  width: 1em;
-  height: 1em;
-}  
 .text-light i{
     width: 1em;
   }
