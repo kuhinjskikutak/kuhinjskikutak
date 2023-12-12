@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/173324f0ea.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <!--
     
 TemplateMo 559 Zay Shop
@@ -82,8 +83,7 @@ padding: 1em;
         <div id="vrh-stranice" class="container">
             <div class="w-100 d-flex justify-content-between">
                 <div>
-                    E-mail:
-                    <a class="navbar-lg-brand text-light text-decoration-none" href="#">kutakkuhinjski@gmail.com</a>
+                    <a class="navbar-lg-brand text-light text-decoration-none" href="mailto:kutakkuhinjski@gmail.com">kutakkuhinjski@gmail.com</a>
                   <!--  Whatsapp:
                     <a class="navbar-sm-brand text-light text-decoration-none" href="#">066/935-8484</a>-->
                 </div>
@@ -5472,12 +5472,75 @@ var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
             $('#myCarousel').carousel(id);
     });
 
-    $('div.artikli').lookingfor({
-  input: $('input.filter'),
-  items: 'div',
-  highlight: true,
-  highlightColor: '#ffde00',
+    $(document).ready(function() {
+	
+	// Add class to mailto link
+	// Needed to separate the disabling of the default action AND copy email to clipboard
+	$('a[href^=mailto]').addClass('mailto-link');
+
+	var mailto = $('.mailto-link');
+	var messageCopy = 'Click to copy email address';
+	var messageSuccess = 'Email address copied to clipboard';
+	
+	mailto.append('<span class="mailto-message"></span>');
+	$('.mailto-message').append(messageCopy);
+	
+	// Disable opening your email client. yuk.
+	$('a[href^=mailto]').click(function() {
+		return false; 
+	})
+	
+	// On click, get href and remove 'mailto:' from value
+	// Store email address in a variable.
+	mailto.click(function() {
+		var href = $(this).attr('href');
+		var email = href.replace('mailto:', '');
+		copyToClipboard(email);
+		$('.mailto-message').empty().append(messageSuccess);
+		setTimeout(function() {
+			$('.mailto-message').empty().append(messageCopy);}, 2000); 
+	});
+	
 });
+
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+}
+	
+	// Add class to mailto link
+	// Needed to separate the disabling of the default action AND copy email to clipboard
+	$('a[href^=mailto]').addClass('mailto-link');
+
+	var mailto = $('.mailto-link');
+	var messageCopy = 'Click to copy email address';
+	var messageSuccess = 'Email address copied to clipboard';
+	
+	mailto.append('<span class="mailto-message"></span>');
+	$('.mailto-message').append(messageCopy);
+	
+	// Disable opening your email client. yuk.
+	$('a[href^=mailto]').click(function() {
+		return false; 
+	})
+	
+	// On click, get href and remove 'mailto:' from value
+	// Store email address in a variable.
+	mailto.click(function() {
+		var href = $(this).attr('href');
+		var email = href.replace('mailto:', '');
+		copyToClipboard(email);
+		$('.mailto-message').empty().append(messageSuccess);
+		setTimeout(function() {
+			$('.mailto-message').empty().append(messageCopy);}, 2000); 
+	});
+	
         </script>
     <!-- End Script -->
 </body>
