@@ -3,6 +3,32 @@ Custom Css
 */
 
 @media (min-width:730px) {
+  
+.obavestenje{
+    display: flex;
+    text-align: center;
+    margin-top: 5em;
+}
+.obavestenje-top{
+    display: block;
+    width: 35%;
+    text-align: center;
+    margin: auto;
+}
+.obavestenje-pasus{
+    width: 30%;
+    margin: auto;
+    height: 10em;
+}
+.obavestenje-naslov-h2{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.obavestenje-naslov{
+    text-align: center;
+}
+
   .col-lg-4 {
     display: flex;
     flex: 25.33333%;
@@ -46,6 +72,35 @@ Custom Css
   }
   }
   @media (max-width:730px) {
+  
+  .obavestenje{
+      display: flex;
+      text-align: center;
+      margin-top: 5em;
+  }
+  .obavestenje-top{
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin: auto;
+  }
+  .obavestenje-pasus{
+      width: 30%;
+      margin: auto;
+      height: 10em;
+  }
+  .obavestenje-naslov-h2{
+      text-align: center;
+      margin-top: 2em;
+      margin-bottom: 1em;
+  }
+  .obavestenje-naslov{
+      text-align: center;
+  }
+  .razdelilac{
+      margin-bottom: 10em;
+  }
+
   .product-offer {
     width: 100%;
     position: relative;
